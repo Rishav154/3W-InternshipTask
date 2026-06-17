@@ -53,7 +53,7 @@ A clean, premium full-stack Social Post Application featuring account creation, 
 
 ### Prerequisites
 - Node.js installed on your system.
-- A MongoDB Atlas database connection string (provided and already configured in `backend/.env`).
+- A MongoDB Atlas database connection string (configured in `backend/.env`).
 
 ### 1. Install Dependencies
 Install dependencies in both the backend and frontend folders separately:
@@ -69,8 +69,8 @@ cd ../frontend && npm install
 The backend environment is configured in `backend/.env`.
 ```ini
 PORT=5000
-MONGODB_URI=mongodb+srv://admin:AGyjCtG6nyrZHEF7@cluster0.alnooyw.mongodb.net/mini-social-post?retryWrites=true&w=majority&appName=Cluster0
-JWT_SECRET=supersecretjwtkey123456
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 NODE_ENV=development
 ```
 
@@ -95,8 +95,7 @@ npm run dev
 
 ## ☁️ Deployment Guidelines
 
-### Database
-- Already hosted on **MongoDB Atlas** (using the connection URI provided).
+- Hosted on **MongoDB Atlas** (using your configured connection URI).
 
 ### Backend (e.g. Render)
 1. Link your public GitHub repository to a new web service on Render.
