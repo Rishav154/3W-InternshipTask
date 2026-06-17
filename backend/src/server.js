@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Mini Social Post API!' });
 });
 
+app.get("/keepalive", (req, res) => {
+  res.status(200).send("I am alive");
+});
+
 // API Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/posts', require('./routes/posts'));
